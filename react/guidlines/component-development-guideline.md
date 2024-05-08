@@ -59,7 +59,7 @@ Each component we can have one folder and four files:
 2. button.tsx: this is the file where our component implementation located.
 3. style.ts: as its name says, it contains all styles related to this component.
 4. props.ts: which is our interface for specifing the properties for our component.
-5. use-logics.ts: which is a custom to handle ui logics that its optional and add it just if you need some ui logics in this component.
+5. use-logics.ts: which is a custom hook to handle ui logics that its optional and add it just when you need some ui logics in this component.
 
 ### Props interface
 The first step is to specify interface for our component to know which properties will come to our component. to know about these properties we need to look at the task descriptions and in the design properties you can see list of properties which this component needs.
