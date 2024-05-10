@@ -407,6 +407,18 @@ As you see we in parameters and design we put related design link for this compo
 
 Also in argTypes we specified property types and description of props that we specified in prop interface to check them in storybook. in this step we should specify args for all properties which we need to be documented completely and make sure they're completely working in the way that we want.
 
+### Export component 
+As the last step we should add component to base index.ts file and export it from there. So our users can import it from our library.
+```ts
+// ~/index.ts
+...
+import Button from '~/components/inputs/button/button';
+...
+/* ------------------------------- Components ------------------------------- */
+...
+export { Button };
+...
+```
 ## Pull request 
 After implementing all of properties and style logics which mentioned in the task description and the design, we can make pull request from our branch which is `feature/button` in this example to `develop` branch and we should wait for pipline to check if everything is ok with our branch and move our task in the board to `In review` column and wait for reviewing. If we got any request changes from other reviewers we should fix the problem and again ask for rereview again and repeat this process till our pull request will be addmited and merge with develop branch.
 
